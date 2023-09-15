@@ -1,0 +1,18 @@
+[package]
+name = "clocktower"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-session = { version = "0.7.2", features = ["cookie-session"] }
+actix-web = { version = "4.4.0", features = ["openssl"] }
+anyhow = "1.0.75"
+clap = { version = "4.4.3", features = ["derive"] }
+lazy_static = "1.4.0"
+openssl = { version = "0.10", features = ["v110"] }
+serde = { version = "1.0.188", features = ["derive"] }
+sqlx = { version = "0.7.1", features = ["runtime-tokio", "uuid", "postgres"] }
+toml = "0.8.0"
+uuid = { version = "1.4.1", features = ["v7", "serde"] }
