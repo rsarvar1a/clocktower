@@ -1,6 +1,7 @@
 mod factory;
 mod models;
 mod services;
+mod utils;
 
 use actix_session::{config::BrowserSession, storage::CookieSessionStore, SessionMiddleware};
 use actix_web::{cookie, middleware, web, App, HttpServer};
